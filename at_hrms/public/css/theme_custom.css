@@ -200,7 +200,7 @@ input:focus{
 }
 .page-head,
 .page-head .page-head-content{
-    top: var(--page-head-height);
+    top: var(--page-head-height); 
 }
 
 
