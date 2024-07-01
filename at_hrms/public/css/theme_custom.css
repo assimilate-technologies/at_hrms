@@ -203,15 +203,17 @@ input:focus{
     top: var(--page-head-height); 
 }
 
-
+.page-head .page-head-content .title-text{
+color:var(--text-primary-color);
+}
 
 /* Top Header */
 .navbar{
-    background: var(--secondary-background-color) !important;
+    background: var(--control-bg) !important;
     height: var(--navbar-height);
 }
 .navbar-expand{
-    background-color: var(--secondary-background-color);
+    background-color: var(--control-bg);
 }
 #navbar-breadcrumbs > li > a::before{
     font-family: FontAwesome;
