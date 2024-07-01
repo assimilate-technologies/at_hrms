@@ -53,6 +53,7 @@
     --secondary-background-color: #6ab0f600;
     --bg-color: var(--gray-900);
     --disabled-control-bg: var(--gray-900);
+    --strock-page-head:#fff;
     --border-color: #1c2126;
     --margin-lg : 15px;
     --text-bold: 600;
@@ -66,6 +67,7 @@
     --bg-color: #f2f5fa;
     --text-bold: 600;
     --control-bg : #fff;
+    --strock-page-head:#fff;
     --control-bg-on-gray: #d4dcea;
     --disabled-control-bg: #f2f5fa;
     --heading-color: #333;
@@ -147,6 +149,7 @@ input:focus{
     --primary-color: #ffa00a;
     --bg-hover-color:#ff780aed;
     --bg-secondary-hover-color:#ff980026;
+    --strock-page-head:#fff;
     --secondary-color: #7574ff;
     --white-color: #ffffff;
     --black-color: #000000;
@@ -209,6 +212,9 @@ input:focus{
 
 .page-head .page-head-content .page-title .title-text{
 color:var(--text-primary-color) !important;
+}
+.page-head .page-head-content button svg use{
+    stroke: var(--control-bg);
 }
 
 /* Top Header */
