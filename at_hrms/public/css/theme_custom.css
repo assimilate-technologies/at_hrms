@@ -209,14 +209,14 @@ input:focus{
 .page-head .page-head-content{
     top: var(--page-head-height); 
 }
-
+ 
 .page-head .page-head-content .page-title .title-text{
 color:var(--text-primary-color) !important;
 }
-.page-head .page-head-content .sidebar-toggle-btn{
-    stroke: var(--strock-page-head) !important;
+.page-head .es-icon {
+    stroke: var(--strock-page-head) !important; 
 }
-
+ 
 /* Top Header */
 .navbar{
     background: var(--control-bg) !important;
