@@ -240,10 +240,10 @@ color:var(--text-primary-color) !important;
     top: 3px;
     content: "\f105";
     margin-right: 10px;
-    color: var(--white-color);
+    color: var(--text-secondary-color);
 }
 #navbar-breadcrumbs a{
-    color: var(--white-color);
+    color: var(--text-secondary-color);
     text-decoration: none;
 }
 header .form-control{
