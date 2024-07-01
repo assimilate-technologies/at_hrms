@@ -213,8 +213,8 @@ input:focus{
 .page-head .page-head-content .page-title .title-text{
 color:var(--text-primary-color) !important;
 }
-.page-head .page-head-content button svg use{
-    stroke: var(--control-bg);
+.page-head .page-head-content .sidebar-toggle-btn{
+    stroke: var(--strock-page-head) !important;
 }
 
 /* Top Header */
