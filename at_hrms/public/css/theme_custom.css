@@ -202,8 +202,12 @@ input:focus{
 .page-head .page-head-content{
     top: var(--page-head-height); 
 }
-
-
+.page-head .page-head-content{
+    top: var(--page-head-height); 
+}
+.page-head .page-head-content .page-title .title-text{
+    color: var(--text-primary-color) !important;
+}
 
 /* Top Header */
 .navbar{
