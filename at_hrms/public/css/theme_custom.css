@@ -216,6 +216,9 @@ color:var(--text-primary-color) !important;
 .page-head .es-icon {
     stroke: var(--strock-page-head) !important; 
 }
+.page-head .page-icon-group .es-icon {
+    stroke: var(--text-secondary-color) !important; 
+}
  
 /* Top Header */
 .navbar{
