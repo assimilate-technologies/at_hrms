@@ -34,6 +34,9 @@
 .widget .widget-head .widget-title {
     font-size: var(--text-base);
 }
+.dashboard-widget-box .widget-head .widget-control .chart-actions .btn-secondary{
+    background: #f8a3a300 !important;
+}
 .comment-box .comment-input-header, .form-dashboard-section .section-head, .form-section .section-head, .head-title {
     font-size: var(--text-base);
     font-weight: 600;
@@ -146,7 +149,7 @@ input:focus{
 :root {
     --background-color: #36414c;
     --secondary-background-color: #6ab0f6;
-    --primary-color: #ffa00a;
+    --ct-primary-color: #ffa00a;
     --bg-hover-color:#ff780aed;
     --bg-secondary-hover-color:#ff980026;
     --strock-page-head:#fff;
@@ -155,8 +158,8 @@ input:focus{
     --black-color: #000000;
     --gray-color: #888;
     --info-btn-bg-color:#606060;
-    --secondary-btn-background-color:#ea7272;
-    --secondary-btn-hover-color:#c83b3b;
+    --secondary-btn-background-color:#5a7188;
+    --secondary-btn-hover-color:#ffa00a;
     
     --text-primary-color:#fff;
     --text-secondary-color:#222222;
@@ -173,7 +176,7 @@ input:focus{
 }
 .btn-primary{
     color: var(--text-primary-color) !important;
-    background-color: var(--primary-color) !important;
+    background-color: var(--ct-primary-color) !important;
     border-radius: 5px !important;
 }
 .btn-primary:hover{
@@ -357,6 +360,7 @@ symbol#icon-small-down{
 
 /* Buttons CSS*/
 .filter-button,
+.filter-x-button,
 .sort-selector-button,
 .btn-order{
     background-color: var(--secondary-btn-background-color) !important;
@@ -365,6 +369,7 @@ symbol#icon-small-down{
     border-radius: var(--border-radius-lg) !important;
 }
 .filter-button:hover,
+.filter-x-button:hover,
 .sort-selector-button:hover,
 .btn-order:hover{
     background-color: var(--secondary-btn-hover-color) !important;
@@ -373,8 +378,14 @@ symbol#icon-small-down{
 .filter-button span.filter-icon{
     color: var(--white-color);
 }
-.filter-button span.filter-icon svg.icon{
-    stroke: var(--white-color);
+.filter-button span.filter-icon .es-icon,
+.filter-x-button span.filter-icon .es-icon{
+    stroke: var(--white-color) !important;
+}
+
+.sort-selector .btn-order .sort-order .icon-sm use,
+.sort-selector .btn-order .sort-order .icon use{ 
+    stroke: var(--white-color) !important;
 } 
 
 .navbar-nav.nav-item.es-icon{
