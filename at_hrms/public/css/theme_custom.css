@@ -149,8 +149,9 @@ input:focus{
 :root {
     --background-color: #36414c;
     --secondary-background-color: #6ab0f6;
-    --ct-primary-color: #ffa00a;
-    --bg-hover-color:#ff780aed;
+    --sidelbl-primary-color: #ff780aed;
+    --ct-primary-color: #ff780aed;
+    --bg-hover-color:#ffa00a;
     --bg-secondary-hover-color:#ff980026;
     --strock-page-head:#fff;
     --secondary-color: #7574ff;
@@ -184,7 +185,7 @@ input:focus{
 
 }
 .btn-secondary{
-    background-color: var(--info-btn-bg-color) !important;
+    background-color: var(--secondary-btn-background-color) !important;
     color: var(--white-color) !important;
     border-radius: 5px !important;
     transition: background-color ease-in-out .15s;
@@ -274,8 +275,6 @@ header ul#navbar-breadcrumbs{
 header .form-control:focus{
     background-color: var(--white-color) !important;
 }
-
-
 
 /* Sidebar */
 .layout-side-section .sidebar-label{
@@ -383,7 +382,7 @@ symbol#icon-small-down{
     stroke: var(--white-color) !important;
 }
 
-.sort-selector .btn-order .sort-order .icon-sm use,
+.sort-selector .sort-order .icon.icon-sm use,
 .sort-selector .btn-order .sort-order .icon use{ 
     stroke: var(--white-color) !important;
 } 

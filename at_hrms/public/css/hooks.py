@@ -229,15 +229,41 @@ app_include_css = "/assets/at_hrms/css/theme_custom.css"
 
 fixtures = [
 
-# "Workflow State",
-# "Workflow Action Master",
-# {"doctype": "Workflow", "filters": []},
-# {"doctype": "Notification", "filters": [[ "module", "=", "AT-HRMS" ]]},
-# {"doctype": "Custom Field", "filters": [[ "module", "=", "AT-HRMS" ]]},
-# {"doctype": "Role Profile", "filters": []},
-# {"doctype": "Module Profile", "filters": []},
-{"doctype": "Workspace", "filters":[]},
+    "Workflow State",
 
+    "Workflow Action Master",
+
+    {"doctype": "Workflow", "filters": [
+
+        [
+
+            "name", "in", [
+
+                "Sales Invoice Flow",
+
+                "Additional Part approval Flow",
+
+                "BOM approval Flow"
+
+                ]
+
+        ]
+
+    ]},
+ 
+    {"doctype": "Notification", "filters": []},
+ 
+    {"doctype": "Custom Field", "filters": [
+
+        [
+
+            "module", "=", "AT HRMS"
+
+        ]
+
+    ]},
+
+    
 
 ]
  
