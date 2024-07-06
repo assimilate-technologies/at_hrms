@@ -10,7 +10,7 @@ app_license = "apache-2.0"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/at_hrms/css/theme_custom.css"
+# app_include_css = "/assets/at_hrms/css/theme_custom.css"
 # app_include_js = "/assets/at_hrms/js/at_hrms.js"
 
 # include js, css files in header of web template
