@@ -229,14 +229,14 @@ app_license = "apache-2.0"
 
 fixtures = [
 
-# "Workflow State",
-# "Workflow Action Master",
-# {"doctype": "Workflow", "filters": []},
-# {"doctype": "Notification", "filters": [[ "module", "=", "AT-HRMS" ]]},
-# {"doctype": "Custom Field", "filters": [[ "module", "=", "AT-HRMS" ]]},
-# {"doctype": "Role Profile", "filters": []},
-# {"doctype": "Module Profile", "filters": []},
-# {"doctype": "Workspace", "filters":[]},
+"Workflow State",
+"Workflow Action Master",
+{"doctype": "Workflow", "filters": []},
+{"doctype": "Notification", "filters": [[ "module", "=", "AT-HRMS" ]]},
+{"doctype": "Custom Field", "filters": [[ "module", "=", "AT-HRMS" ]]},
+{"doctype": "Role Profile", "filters": []},
+{"doctype": "Module Profile", "filters": []},
+{"doctype": "Workspace", "filters":[]},
 
 
 ]
