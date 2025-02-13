@@ -34,6 +34,9 @@
 .widget .widget-head .widget-title {
     font-size: var(--text-base);
 }
+.dashboard-widget-box .widget-head .widget-control .chart-actions .btn-secondary{
+    background: #f8a3a300 !important;
+}
 .comment-box .comment-input-header, .form-dashboard-section .section-head, .form-section .section-head, .head-title {
     font-size: var(--text-base);
     font-weight: 600;
@@ -49,8 +52,11 @@
     font-weight: 500;
 }
 [data-theme="dark"] {
+    --background-color: #36414c00;
+    --secondary-background-color: #6ab0f600;
     --bg-color: var(--gray-900);
     --disabled-control-bg: var(--gray-900);
+    --strock-page-head:#fff;
     --border-color: #1c2126;
     --margin-lg : 15px;
     --text-bold: 600;
@@ -59,9 +65,12 @@
 }
 
 [data-theme="light"] {
+    --background-color: #36414c;
+    --secondary-background-color: #6ab0f6;
     --bg-color: #f2f5fa;
     --text-bold: 600;
     --control-bg : #fff;
+    --strock-page-head:#fff;
     --control-bg-on-gray: #d4dcea;
     --disabled-control-bg: #f2f5fa;
     --heading-color: #333;
@@ -140,19 +149,21 @@ input:focus{
 :root {
     --background-color: #36414c;
     --secondary-background-color: #6ab0f6;
-    --primary-color: #ffa00a;
-    --bg-hover-color:#ff780aed;
+    --sidelbl-primary-color: #ff780aed;
+    --ct-primary-color: #ff780aed;
+    --bg-hover-color:#ffa00a;
     --bg-secondary-hover-color:#ff980026;
+    --strock-page-head:#fff;
     --secondary-color: #7574ff;
     --white-color: #ffffff;
     --black-color: #000000;
     --gray-color: #888;
     --info-btn-bg-color:#606060;
-    --secondary-btn-background-color:#ea7272;
-    --secondary-btn-hover-color:#c83b3b;
+    --secondary-btn-background-color:#5a7188;
+    --secondary-btn-hover-color:#ffa00a;
     
     --text-primary-color:#fff;
-    --text-secondary-color:#acacac;
+    --text-secondary-color:#222222;
 
     --page-head-height: 50px;
     --navbar-height: 50px;
@@ -166,7 +177,7 @@ input:focus{
 }
 .btn-primary{
     color: var(--text-primary-color) !important;
-    background-color: var(--primary-color) !important;
+    background-color: var(--ct-primary-color) !important;
     border-radius: 5px !important;
 }
 .btn-primary:hover{
@@ -174,7 +185,7 @@ input:focus{
 
 }
 .btn-secondary{
-    background-color: var(--info-btn-bg-color) !important;
+    background-color: var(--secondary-btn-background-color) !important;
     color: var(--white-color) !important;
     border-radius: 5px !important;
     transition: background-color ease-in-out .15s;
@@ -202,6 +213,19 @@ input:focus{
 .page-head .page-head-content{
     top: var(--page-head-height); 
 }
+
+ 
+.page-head .page-head-content .page-title .title-text{
+color:var(--text-primary-color) !important;
+}
+.page-head .es-icon {
+    stroke: var(--strock-page-head) !important; 
+}
+.page-head .page-icon-group .es-icon {
+    stroke: var(--text-secondary-color) !important; 
+}
+ 
+
 .page-head .page-head-content{
     top: var(--page-head-height); 
 }
@@ -211,11 +235,11 @@ input:focus{
 
 /* Top Header */
 .navbar{
-    background: var(--secondary-background-color) !important;
+    background: var(--control-bg) !important;
     height: var(--navbar-height);
 }
 .navbar-expand{
-    background-color: var(--secondary-background-color);
+    background-color: var(--control-bg);
 }
 #navbar-breadcrumbs > li > a::before{
     font-family: FontAwesome;
@@ -232,10 +256,10 @@ input:focus{
     top: 3px;
     content: "\f105";
     margin-right: 10px;
-    color: var(--white-color);
+    color: var(--text-secondary-color);
 }
 #navbar-breadcrumbs a{
-    color: var(--white-color);
+    color: var(--text-secondary-color);
     text-decoration: none;
 }
 header .form-control{
@@ -260,8 +284,6 @@ header ul#navbar-breadcrumbs{
 header .form-control:focus{
     background-color: var(--white-color) !important;
 }
-
-
 
 /* Sidebar */
 .layout-side-section .sidebar-label{
@@ -346,6 +368,7 @@ symbol#icon-small-down{
 
 /* Buttons CSS*/
 .filter-button,
+.filter-x-button,
 .sort-selector-button,
 .btn-order{
     background-color: var(--secondary-btn-background-color) !important;
@@ -354,6 +377,7 @@ symbol#icon-small-down{
     border-radius: var(--border-radius-lg) !important;
 }
 .filter-button:hover,
+.filter-x-button:hover,
 .sort-selector-button:hover,
 .btn-order:hover{
     background-color: var(--secondary-btn-hover-color) !important;
@@ -362,8 +386,14 @@ symbol#icon-small-down{
 .filter-button span.filter-icon{
     color: var(--white-color);
 }
-.filter-button span.filter-icon svg.icon{
-    stroke: var(--white-color);
+.filter-button span.filter-icon .es-icon,
+.filter-x-button span.filter-icon .es-icon{
+    stroke: var(--white-color) !important;
+}
+
+.sort-selector .sort-order .icon.icon-sm use,
+.sort-selector .btn-order .sort-order .icon use{ 
+    stroke: var(--white-color) !important;
 } 
 
 .navbar-nav.nav-item.es-icon{

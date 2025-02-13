@@ -10,7 +10,7 @@ app_license = "apache-2.0"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/at_hrms/css/theme_custom.css"
+app_include_css = "/assets/at_hrms/css/theme_custom.css"
 # app_include_js = "/assets/at_hrms/js/at_hrms.js"
 
 # include js, css files in header of web template
@@ -36,7 +36,7 @@ app_license = "apache-2.0"
 # Svg Icons
 # ------------------
 # include app icons in desk
-app_include_icons = "at_hrms/public/icons.svg"
+# app_include_icons = "at_hrms/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -229,16 +229,41 @@ app_include_icons = "at_hrms/public/icons.svg"
 
 fixtures = [
 
-"Workflow State",
-"Workflow Action Master",
-{"doctype": "Workflow", "filters": []},
-{"doctype": "Notification", "filters": []},
-{"doctype": "Custom Field", "filters": []},
-{"doctype": "Role Profile", "filters": []},
-{"doctype": "Module Profile", "filters": []},
-{"doctype": "Workspace", "filters":[]},
-{"doctype": "Client Script", "filters":[]},
+    "Workflow State",
 
+    "Workflow Action Master",
+
+    {"doctype": "Workflow", "filters": [
+
+        [
+
+            "name", "in", [
+
+                "Sales Invoice Flow",
+
+                "Additional Part approval Flow",
+
+                "BOM approval Flow"
+
+                ]
+
+        ]
+
+    ]},
+ 
+    {"doctype": "Notification", "filters": []},
+ 
+    {"doctype": "Custom Field", "filters": [
+
+        [
+
+            "module", "=", "AT HRMS"
+
+        ]
+
+    ]},
+
+    
 
 ]
  
