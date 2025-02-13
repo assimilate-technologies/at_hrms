@@ -213,6 +213,7 @@ input:focus{
 .page-head .page-head-content{
     top: var(--page-head-height); 
 }
+
  
 .page-head .page-head-content .page-title .title-text{
 color:var(--text-primary-color) !important;
@@ -224,6 +225,14 @@ color:var(--text-primary-color) !important;
     stroke: var(--text-secondary-color) !important; 
 }
  
+
+.page-head .page-head-content{
+    top: var(--page-head-height); 
+}
+.page-head .page-head-content .page-title .title-text{
+    color: var(--text-primary-color) !important; 
+}
+
 /* Top Header */
 .navbar{
     background: var(--control-bg) !important;
