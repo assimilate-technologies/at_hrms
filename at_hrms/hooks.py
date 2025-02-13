@@ -232,11 +232,12 @@ fixtures = [
 "Workflow State",
 "Workflow Action Master",
 {"doctype": "Workflow", "filters": []},
-{"doctype": "Notification", "filters": [[ "module", "=", "AT-HRMS" ]]},
-{"doctype": "Custom Field", "filters": [[ "module", "=", "AT-HRMS" ]]},
+{"doctype": "Notification", "filters": []},
+{"doctype": "Custom Field", "filters": []},
 {"doctype": "Role Profile", "filters": []},
 {"doctype": "Module Profile", "filters": []},
 {"doctype": "Workspace", "filters":[]},
+{"doctype": "Client Script", "filters":[]},
 
 
 ]
