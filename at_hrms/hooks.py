@@ -36,7 +36,7 @@ app_license = "apache-2.0"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "at_hrms/public/icons.svg"
+app_include_icons = "at_hrms/public/icons.svg"
 
 # Home Pages
 # ----------
